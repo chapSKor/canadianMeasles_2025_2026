@@ -2,12 +2,12 @@ cff-version: 1.2.0
 message: >-
   If you use this code in your research, please cite this software.
 type: software
-title: "SEIR analysis of measles waves in Ontario, Alberta, and Manitoba, 2025–2026"
+title: "Mathematical epidemiological analysis of the 2025-2026 measles outbreaks that ended Canada's 27 Year Measles Elimination status"
 authors:
   - family-names: Korosec
     given-names: Chapin S.
 abstract: >-
-  R scripts for fitting and analysing SEIR models of five provincial
+  This github contains R scripts for fitting and analysing SEIR models of five provincial
   measles waves: Ontario 2025, Alberta 2025 and 2026, and Manitoba
   2025 and 2026. The workflow uses Monolix through lixoftConnectors
   for parameter estimation and initial infectious seed-size profiling,
