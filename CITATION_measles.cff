@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: >-
+  If you use this code in your research, please cite this software.
+type: software
+title: "SEIR analysis of measles waves in Ontario, Alberta, and Manitoba, 2025–2026"
+authors:
+  - family-names: Korosec
+    given-names: Chapin S.
+abstract: >-
+  R scripts for fitting and analysing SEIR models of five provincial
+  measles waves: Ontario 2025, Alberta 2025 and 2026, and Manitoba
+  2025 and 2026. The workflow uses Monolix through lixoftConnectors
+  for parameter estimation and initial infectious seed-size profiling,
+  with weekly time units, BIC-based model comparison, sensitivity
+  analyses of latent and infectious periods, and uncertainty propagation.
+  Outputs include effective reproduction numbers, effective susceptible
+  population sizes, initial exponential growth rates, doubling times,
+  peak full widths at half maximum, and manuscript figures and tables.
+keywords:
+  - measles
+  - mathematical epidemiology
+  - SEIR
+  - parameter estimation
+  - Monolix
+  - Canada
+# Before publication, confirm the software title and full software-author list.
+# Add repository-code, version, date-released, and DOI when available.
+# Add preferred-citation when the manuscript citation is finalized.
