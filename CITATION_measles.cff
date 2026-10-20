@@ -15,7 +15,9 @@ abstract: >-
   analyses of latent and infectious periods, and uncertainty propagation.
   Outputs include effective reproduction numbers, effective susceptible
   population sizes, initial exponential growth rates, doubling times,
-  peak full widths at half maximum, and manuscript figures and tables.
+  peak full widths at half maximum, and manuscript figures and tables
+repository-code: "https://github.com/chapSKor/canadianMeasles_2025_2026"
+url: "https://github.com/chapSKor/canadianMeasles_2025_2026"
 keywords:
   - measles
   - mathematical epidemiology
