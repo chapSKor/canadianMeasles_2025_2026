@@ -1,0 +1,62 @@
+<DATAFILE>
+
+[FILEINFO]
+file={path='../MeaslesManData_Province_2025.csv'}
+delimiter = comma
+header={week_start_date, Time_days_, Time_weeks_, Y_True_Total, Ytype}
+
+[CONTENT]
+Time_weeks_ = {use=time}
+Y_True_Total = {use=observation, type=continuous}
+Ytype = {use=identifier}
+
+<MODEL>
+
+[INDIVIDUAL]
+input = {I0_pop, ReproNum_pop, S0_pop, gamma_pop, nu_pop}
+
+DEFINITION:
+I0 = {distribution=logNormal, typical=I0_pop, no-variability}
+ReproNum = {distribution=logNormal, typical=ReproNum_pop, no-variability}
+S0 = {distribution=logNormal, typical=S0_pop, no-variability}
+gamma = {distribution=logNormal, typical=gamma_pop, no-variability}
+nu = {distribution=logNormal, typical=nu_pop, no-variability}
+
+[LONGITUDINAL]
+input = {a, b}
+
+file = '../K1_FitR0.txt'
+
+DEFINITION:
+Y_True_Total = {distribution=normal, prediction=inc, errorModel=combined1(a, b)}
+
+<FIT>
+data = 'Y_True_Total'
+model = Y_True_Total
+
+<PARAMETER>
+I0_pop = {value=2, method=FIXED}
+ReproNum_pop = {value=1.401962, method=MLE}
+S0_pop = {value=562.73279, method=MLE}
+a = {value=1.1973778, method=MLE}
+b = {value=0.4068753, method=MLE}
+c = {value=1, method=FIXED}
+gamma_pop = {value=0.7, method=FIXED}
+nu_pop = {value=0.875, method=FIXED}
+
+<MONOLIX>
+
+[TASKS]
+populationParameters()
+individualParameters(method = {conditionalMean, conditionalMode })
+fim(method = StochasticApproximation)
+logLikelihood(method = ImportanceSampling)
+
+[PLOTS]
+run = true
+plots = {indfits = {selected = true}, parameterdistribution = {selected = true}, obspred = {selected = true}, covariancemodeldiagnosis = {selected = true}, covariatemodeldiagnosis = {selected = true}, vpc = {selected = true}, npc = {selected = true}, residualsscatter = {selected = true}, residualsdistribution = {selected = true}, randomeffects = {selected = true}, predictiondistribution = {selected = true}, likelihoodcontribution = {selected = true}, saemresults = {selected = true}, condmeanresults = {selected = true}, fisher = {selected = true}, likelihoodresults = {selected = true}}
+
+[SETTINGS]
+GLOBAL:
+exportpath = 'K1Fit_R0_Manitoba_2025_take3'
+
