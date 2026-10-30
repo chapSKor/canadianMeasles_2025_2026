@@ -1,0 +1,2 @@
+id,ReproNum_SAEM,nu_SAEM,gamma_SAEM,S0_SAEM,I0_SAEM,ReproNum_mode,nu_mode,gamma_mode,S0_mode,I0_mode
+1,1.79904,0.7,0.875,1038.41,6,1.79904,0.7,0.875,1038.41,6

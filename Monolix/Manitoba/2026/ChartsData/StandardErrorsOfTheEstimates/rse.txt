@@ -1,0 +1,5 @@
+parameter,res_sa
+ReproNum_pop,1.72046
+S0_pop,5.973
+a,52.6137
+b,27.7371
