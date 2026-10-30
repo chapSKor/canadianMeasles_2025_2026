@@ -1,0 +1,96 @@
+********************************************************************************
+*                         K1_fitR0_wkly.mlxtran                                *
+*                         October 30, 2026 at 16:03:44                         *
+*                         Monolix version : 2024R1                             *
+********************************************************************************
+
+
+ESTIMATION OF THE POPULATION PARAMETERS ________________________________________
+
+Fixed Effects ----------------------------     se_sa    rse(%)   P2.5_sa  P97.5_sa
+ReproNum_pop :                        1.78    0.0184      1.03      1.74      1.81
+nu_pop       :                         0.7
+gamma_pop    :                       0.875
+S0_pop       :                    3.18e+03       207      6.52   2.8e+03  3.62e+03
+I0_pop       :                           2
+
+Error Model Parameters -------------------
+a            :                        3.86      1.07      27.8      2.31      6.48
+b            :                       0.289    0.0684      23.6     0.185     0.452
+
+Elapsed time (seconds):     0.72
+CPU time     (seconds):        5
+Exploratory phase iterations:        8 (Autostop)
+Smoothing phase iterations:          2 (Autostop)
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE INDIVIDUAL PARAMETERS ________________________________________
+
+
+Estimation of the individual parameters by Conditional Mode --------------------
+                     min            Q1        median            Q3           max  shrinkage(%)
+ReproNum :          1.78          1.78          1.78          1.78          1.78           nan
+nu       :           0.7           0.7           0.7           0.7           0.7           nan
+gamma    :         0.875         0.875         0.875         0.875         0.875           nan
+S0       :      3.18e+03      3.18e+03      3.18e+03      3.18e+03      3.18e+03           nan
+I0       :             2             2             2             2             2           nan
+
+Elapsed time (seconds):        0
+CPU time     (seconds):        0
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE FISHER INFORMATION MATRIX ____________________________________
+
+
+Estimation of the Fisher information matrix by Stochastic Approximation --------
+
+Correlation Matrix :
+ReproNum_pop         1
+      S0_pop   0.44779         1
+           a  0.027137   0.39494         1
+           b  -0.11281  -0.57891   -0.6519         1
+
+                               min       max   max/min
+Eigen values           :      0.28       2.2       7.8
+
+Elapsed time (seconds):    0.047
+CPU time     (seconds):     0.34
+Iterations:        1 (Autostop)
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE LOG-LIKELIHOOD _______________________________________________
+
+                                                            (is)
+-2 x log-likelihood                       (OFV) :         380.22
+Akaike Information Criteria               (AIC) :         388.22
+Corrected Bayesian Information Criteria  (BICc) :         395.71
+Bayesian Information Criteria             (BIC) :         380.22
+
+Elapsed time                          (seconds) :           0.00
+CPU time                              (seconds) :           0.00
+MonteCarlo size (is):        1 (Fixed number of iterations)
+
+
+[Importance Sampling] Standard error        : 0.000
+                      Sampling distribution : T-distribution with 5 degrees of freedom
+
+ _______________________________________________________________________________
+
+DATASET INFORMATION
+Number of individuals: 1
+Number of observations (Y_True_Total): 48
+Number of doses: 0
+
