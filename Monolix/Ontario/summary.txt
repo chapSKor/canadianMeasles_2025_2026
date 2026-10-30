@@ -1,6 +1,6 @@
 ********************************************************************************
 *                         K1_fitR0_wkly.mlxtran                                *
-*                         October 30, 2026 at 16:03:44                         *
+*                         October 30, 2026 at 16:06:25                         *
 *                         Monolix version : 2024R1                             *
 ********************************************************************************
 
@@ -8,19 +8,19 @@
 ESTIMATION OF THE POPULATION PARAMETERS ________________________________________
 
 Fixed Effects ----------------------------     se_sa    rse(%)   P2.5_sa  P97.5_sa
-ReproNum_pop :                        1.78    0.0184      1.03      1.74      1.81
+ReproNum_pop :                        1.88    0.0152     0.809      1.85      1.91
 nu_pop       :                         0.7
 gamma_pop    :                       0.875
-S0_pop       :                    3.18e+03       207      6.52   2.8e+03  3.62e+03
-I0_pop       :                           2
+S0_pop       :                     3.1e+03       160      5.16   2.8e+03  3.43e+03
+I0_pop       :                           1
 
 Error Model Parameters -------------------
-a            :                        3.86      1.07      27.8      2.31      6.48
-b            :                       0.289    0.0684      23.6     0.185     0.452
+a            :                        4.09       0.8      19.5      2.82      5.94
+b            :                       0.216     0.045      20.8     0.146     0.321
 
-Elapsed time (seconds):     0.72
+Elapsed time (seconds):     0.84
 CPU time     (seconds):        5
-Exploratory phase iterations:        8 (Autostop)
+Exploratory phase iterations:       10 (Autostop)
 Smoothing phase iterations:          2 (Autostop)
 
  _______________________________________________________________________________
@@ -32,13 +32,13 @@ ESTIMATION OF THE INDIVIDUAL PARAMETERS ________________________________________
 
 Estimation of the individual parameters by Conditional Mode --------------------
                      min            Q1        median            Q3           max  shrinkage(%)
-ReproNum :          1.78          1.78          1.78          1.78          1.78           nan
+ReproNum :          1.88          1.88          1.88          1.88          1.88           nan
 nu       :           0.7           0.7           0.7           0.7           0.7           nan
 gamma    :         0.875         0.875         0.875         0.875         0.875           nan
-S0       :      3.18e+03      3.18e+03      3.18e+03      3.18e+03      3.18e+03           nan
-I0       :             2             2             2             2             2           nan
+S0       :       3.1e+03       3.1e+03       3.1e+03       3.1e+03       3.1e+03           nan
+I0       :             1             1             1             1             1           nan
 
-Elapsed time (seconds):        0
+Elapsed time (seconds):    0.001
 CPU time     (seconds):        0
 
  -------------------------------------------------------------------------------
@@ -54,15 +54,15 @@ Estimation of the Fisher information matrix by Stochastic Approximation --------
 
 Correlation Matrix :
 ReproNum_pop         1
-      S0_pop   0.44779         1
-           a  0.027137   0.39494         1
-           b  -0.11281  -0.57891   -0.6519         1
+      S0_pop   0.49844         1
+           a  0.087496   0.19574         1
+           b  -0.17577  -0.41158  -0.46178         1
 
                                min       max   max/min
-Eigen values           :      0.28       2.2       7.8
+Eigen values           :      0.41       1.9       4.7
 
-Elapsed time (seconds):    0.047
-CPU time     (seconds):     0.34
+Elapsed time (seconds):    0.048
+CPU time     (seconds):     0.35
 Iterations:        1 (Autostop)
 
  -------------------------------------------------------------------------------
@@ -74,10 +74,10 @@ Iterations:        1 (Autostop)
 ESTIMATION OF THE LOG-LIKELIHOOD _______________________________________________
 
                                                             (is)
--2 x log-likelihood                       (OFV) :         380.22
-Akaike Information Criteria               (AIC) :         388.22
-Corrected Bayesian Information Criteria  (BICc) :         395.71
-Bayesian Information Criteria             (BIC) :         380.22
+-2 x log-likelihood                       (OFV) :         363.86
+Akaike Information Criteria               (AIC) :         371.86
+Corrected Bayesian Information Criteria  (BICc) :         379.34
+Bayesian Information Criteria             (BIC) :         363.86
 
 Elapsed time                          (seconds) :           0.00
 CPU time                              (seconds) :           0.00

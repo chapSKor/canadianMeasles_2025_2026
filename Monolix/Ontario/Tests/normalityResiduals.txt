@@ -1,3 +1,3 @@
 residuals,statistics,p-value,test
-PWRES_Y_True_Total,0.951401,0.0454785,Shapiro-Wilk
-NPDE_Y_True_Total,0.950281,0.0410298,Shapiro-Wilk
+PWRES_Y_True_Total,0.967668,0.205153,Shapiro-Wilk
+NPDE_Y_True_Total,0.970022,0.253821,Shapiro-Wilk
