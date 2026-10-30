@@ -1,0 +1,2 @@
+id,eta_ReproNum_SAEM,eta_nu_SAEM,eta_gamma_SAEM,eta_S0_SAEM,eta_I0_SAEM,eta_ReproNum_mode,eta_nu_mode,eta_gamma_mode,eta_S0_mode,eta_I0_mode
+1,0,0,0,0,0,0,0,0,0,0

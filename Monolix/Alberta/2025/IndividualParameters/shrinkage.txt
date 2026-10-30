@@ -1,0 +1,6 @@
+parameters,shrinkage_mode
+ReproNum,nan
+nu,nan
+gamma,nan
+S0,nan
+I0,nan
